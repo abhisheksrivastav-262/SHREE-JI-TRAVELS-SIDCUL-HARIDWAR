@@ -151,9 +151,9 @@ home = f"""
 <div class="cards5" style="margin-top:30px">
 <div class="card reveal"><div class="card-img"><img class="nocrop" src="assets/img/cab-front-2.jpg" alt="Shree Ji Travels sedan cab — one way taxi from Haridwar" loading="lazy"></div><div class="card-body"><h3>One Way Cabs</h3><p>Point-to-point drops from Haridwar. Request a quote for your route.</p><a class="card-link" href="one-way-cab.html">Enquire →</a></div></div>
 <div class="card reveal"><div class="card-img"><img class="nocrop" src="assets/img/cab-side-2.jpg" alt="Shree Ji Travels sedan cab — round trip cab Haridwar" loading="lazy"></div><div class="card-body"><h3>Round Trip Cabs</h3><p>Onward + return planned together for comfortable journeys.</p><a class="card-link" href="round-trip-cab.html">Enquire →</a></div></div>
-<div class="card reveal"><div class="card-img"><img data-fallback src="{I['ghat']}" alt="Local taxi in Haridwar near Ganga ghat" loading="lazy"></div><div class="card-body"><h3>Local Cabs</h3><p>Har Ki Pauri, temples &amp; Rishikesh sightseeing, confirmed in advance.</p><a class="card-link" href="local-cab.html">Enquire →</a></div></div>
-<div class="card reveal"><div class="card-img"><img data-fallback src="{I['mountain_road']}" alt="Outstation cab from Haridwar on mountain road" loading="lazy"></div><div class="card-body"><h3>Outstation Cabs</h3><p>Holidays, family visits &amp; business journeys across North India.</p><a class="card-link" href="outstation-cab.html">Enquire →</a></div></div>
-<div class="card reveal"><div class="card-img"><img data-fallback src="{I['himalaya']}" alt="Char Dham Yatra cab from Haridwar in Himalayas" loading="lazy"></div><div class="card-body"><h3>Char Dham Yatra</h3><p>Sacred Yamunotri, Gangotri, Kedarnath &amp; Badrinath journeys.</p><a class="card-link" href="char-dham-yatra.html">Enquire →</a></div></div>
+<div class="card reveal"><div class="card-img"><img class="nocrop" src="assets/img/dest-harkipauri.jpg" alt="Har Ki Pauri, Haridwar — local taxi in Haridwar, real photo" loading="lazy"></div><div class="card-body"><h3>Local Cabs</h3><p>Har Ki Pauri, temples &amp; Rishikesh sightseeing, confirmed in advance.</p><a class="card-link" href="local-cab.html">Enquire →</a></div></div>
+<div class="card reveal"><div class="card-img"><img class="nocrop" src="assets/img/dest-mussoorie.jpg" alt="Mussoorie hills — outstation cab from Haridwar, real photo" loading="lazy"></div><div class="card-body"><h3>Outstation Cabs</h3><p>Holidays, family visits &amp; business journeys across North India.</p><a class="card-link" href="outstation-cab.html">Enquire →</a></div></div>
+<div class="card reveal"><div class="card-img"><img class="nocrop" src="assets/img/temple-kedarnath.jpg" alt="Kedarnath Temple — Char Dham Yatra, real photo" loading="lazy"></div><div class="card-body"><h3>Char Dham Yatra</h3><p>Sacred Yamunotri, Gangotri, Kedarnath &amp; Badrinath journeys.</p><a class="card-link" href="char-dham-yatra.html">Enquire →</a></div></div>
 </div></div></section>
 
 <section class="section-tight"><div class="container"><div class="split">
@@ -184,10 +184,10 @@ home = f"""
 <section class="section-tight"><div class="container">
 <div class="center reveal"><span class="kicker">Destinations</span><h2>Popular Destinations Around Haridwar</h2></div>
 <div class="dest-grid" style="margin-top:24px">
-<div class="dest reveal"><img data-fallback src="{I['ghat']}" alt="Har Ki Pauri Haridwar" loading="lazy"><div><h3>Har Ki Pauri</h3><p>Ganga aarti &amp; ghats</p></div></div>
-<div class="dest reveal"><img data-fallback src="{I['ganga_aarti']}" alt="Rishikesh and Ganga river" loading="lazy"><div><h3>Rishikesh</h3><p>Laxman Jhula &amp; ashrams</p></div></div>
-<div class="dest reveal"><img data-fallback src="{I['delhi']}" alt="Delhi India Gate" loading="lazy"><div><h3>Delhi</h3><p>Airport &amp; city transfers</p></div></div>
-<div class="dest reveal"><img data-fallback src="{I['himalaya']}" alt="Mussoorie and Uttarakhand mountains" loading="lazy"><div><h3>Mussoorie &amp; Hills</h3><p>Weekend mountain trips</p></div></div>
+<div class="dest reveal"><img class="nocrop" src="assets/img/dest-harkipauri.jpg" alt="Har Ki Pauri ghat and clock tower, Haridwar — real photo" loading="lazy"><div><h3>Har Ki Pauri</h3><p>Ganga aarti &amp; ghats</p></div></div>
+<div class="dest reveal"><img class="nocrop" src="assets/img/dest-rishikesh.jpg" alt="Lakshman Jhula, Rishikesh — real photo" loading="lazy"><div><h3>Rishikesh</h3><p>Laxman Jhula &amp; ashrams</p></div></div>
+<div class="dest reveal"><img class="nocrop" src="assets/img/dest-delhi.jpg" alt="India Gate, Delhi — real photo" loading="lazy"><div><h3>Delhi</h3><p>Airport &amp; city transfers</p></div></div>
+<div class="dest reveal"><img class="nocrop" src="assets/img/dest-mussoorie.jpg" alt="Mussoorie hill station panorama — real photo" loading="lazy"><div><h3>Mussoorie &amp; Hills</h3><p>Weekend mountain trips</p></div></div>
 </div></div></section>
 
 <section class="section-tight"><div class="container">
