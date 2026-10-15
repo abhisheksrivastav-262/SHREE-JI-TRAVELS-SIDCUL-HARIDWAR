@@ -3,7 +3,8 @@
 import os
 BASE = "/Users/abhisheksrivastav/Documents/Shree Ji Travels"
 PHONE = "+91 8077274970"
-WA = "918077274970"
+WA = "918865907497"
+WA_DISPLAY = "+91 8865907497"
 TEL = "tel:+918077274970"
 
 U = lambda pid, w=1600: f"https://images.unsplash.com/{pid}?q=80&w={w}&auto=format&fit=crop"
@@ -68,7 +69,7 @@ FOOTER = f"""<footer><div class="container footer-grid">
 <div class="footer-brand"><img src="assets/img/logo.svg" alt="Shree Ji Travels logo" width="58" height="58">
 <h3>SHREE JI TRAVELS</h3>
 <p>SIDCUL, Haridwar–based cab and pilgrimage travel service. One-way, round-trip, local, outstation and Char Dham Yatra enquiries with clear communication and comfortable journeys.</p>
-<p><a href="{TEL}">📞 {PHONE}</a><br><a href="https://wa.me/{WA}" target="_blank" rel="noopener">💬 WhatsApp: {PHONE}</a><br>📍 SIDCUL, Haridwar, Uttarakhand, India</p></div>
+<p><a href="{TEL}">📞 {PHONE}</a><br><a href="https://wa.me/{WA}" target="_blank" rel="noopener">💬 WhatsApp: {WA_DISPLAY}</a><br>📍 SIDCUL, Haridwar, Uttarakhand, India</p></div>
 <div><h4>Services</h4><ul class="f-links">
 <li><a href="one-way-cab.html">One Way Cabs</a></li><li><a href="round-trip-cab.html">Round Trip Cabs</a></li>
 <li><a href="local-cab.html">Local Cabs</a></li><li><a href="outstation-cab.html">Outstation Cabs</a></li>
@@ -85,7 +86,7 @@ FOOTER = f"""<footer><div class="container footer-grid">
 <a class="float-call" href="{TEL}" aria-label="Call Shree Ji Travels now">📞</a>
 <a class="float-wa" href="https://wa.me/{WA}?text=Namaste%20Shree%20Ji%20Travels!%20I%20would%20like%20to%20enquire%20about%20a%20cab%20booking." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
 <div class="lightbox" id="lightbox" role="dialog" aria-label="Image viewer"><button class="lb-close" data-lb-close aria-label="Close">✕</button><button class="lb-prev" data-lb-prev aria-label="Previous">‹</button><img id="lbImg" src="" alt="Gallery photo"><button class="lb-next" data-lb-next aria-label="Next">›</button></div>
-<div class="mobile-book-bar" role="navigation" aria-label="Quick booking"><a class="btn btn-primary btn-sm" href="tel:+918077274970">📞 Call Now</a><a class="btn btn-wa btn-sm" href="https://wa.me/918077274970?text=Namaste%20Shree%20Ji%20Travels!%20I%20would%20like%20to%20enquire%20about%20a%20cab%20booking." target="_blank" rel="noopener">💬 WhatsApp</a></div>
+<div class="mobile-book-bar" role="navigation" aria-label="Quick booking"><a class="btn btn-primary btn-sm" href="tel:+918077274970">📞 Call Now</a><a class="btn btn-wa btn-sm" href="https://wa.me/{WA}?text=Namaste%20Shree%20Ji%20Travels!%20I%20would%20like%20to%20enquire%20about%20a%20cab%20booking." target="_blank" rel="noopener">💬 WhatsApp</a></div>
 <button class="to-top" aria-label="Back to top">↑</button>
 <script src="assets/js/main.js?v=3" defer></script>
 <script src="assets/js/dynamic.js?v=3" defer></script>"""
@@ -124,7 +125,7 @@ def booking_form(form="general", journey_fixed="", chardham=False):
 <div class="field"><label>Travel Date *</label><input name="travelDate" type="date" required></div>
 <div class="field" data-return-field style="display:none"><label>Return Date *</label><input name="returnDate" type="date"></div>
 <div class="field"><label>Number of Passengers *</label><input name="passengers" type="number" min="1" max="50" placeholder="e.g. 4" required></div>
-<div class="field"><label>Vehicle Preference</label><select name="vehicle"><option value="">No preference — advise me</option><option>Sedan Cab</option><option>Passenger Van</option></select></div>
+<div class="field"><label>Vehicle Preference</label><select name="vehicle"><option value="">No preference — advise me</option><option>Sedan Cab</option><option>Passenger Van</option><option>Hyundai Aura</option><option>Maruti Ertiga</option><option>Kia Carens</option><option>Toyota Innova</option></select></div>
 <div class="field"><label>Customer Name *</label><input name="customerName" type="text" placeholder="Your full name" required></div>
 <div class="field"><label>Mobile Number *</label><input name="mobile" type="tel" placeholder="10-digit mobile" required></div>
 {extra}</div>
@@ -182,6 +183,15 @@ home = f"""
 </div></div></section>
 
 <section class="section-tight"><div class="container">
+<div class="center reveal"><span class="kicker">Tour Vehicles</span><h2>Vehicles for Tours</h2><p class="lead">Popular vehicle options for family tours, Yatra groups and outstation journeys. Representative model photos — actual vehicle is confirmed at booking.</p></div>
+<div class="cards4" style="margin-top:26px">
+<div class="card reveal"><div class="card-img"><img class="nocrop" src="assets/img/fleet-aura.webp" alt="Hyundai Aura — tour vehicle option, full photo" loading="lazy"></div><div class="card-body"><h3>Hyundai Aura</h3><p>Compact sedan option for comfortable tours.</p><a class="btn btn-outline btn-sm" href="{WA_LINK}%0AInterest%3A%20Hyundai%20Aura%20for%20tour" target="_blank" rel="noopener">Request on WhatsApp</a></div></div>
+<div class="card reveal"><div class="card-img"><img class="nocrop" src="assets/img/fleet-ertiga.jpg" alt="Maruti Suzuki Ertiga — tour vehicle option, full photo" loading="lazy"></div><div class="card-body"><h3>Maruti Suzuki Ertiga</h3><p>Spacious option for family tours.</p><a class="btn btn-outline btn-sm" href="{WA_LINK}%0AInterest%3A%20Ertiga%20for%20tour" target="_blank" rel="noopener">Request on WhatsApp</a></div></div>
+<div class="card reveal"><div class="card-img"><img class="nocrop" src="assets/img/fleet-carens.jpg" alt="Kia Carens — tour vehicle option, full photo" loading="lazy"></div><div class="card-body"><h3>Kia Carens</h3><p>Premium comfort option for long journeys.</p><a class="btn btn-outline btn-sm" href="{WA_LINK}%0AInterest%3A%20Kia%20Carens%20for%20tour" target="_blank" rel="noopener">Request on WhatsApp</a></div></div>
+<div class="card reveal"><div class="card-img"><img class="nocrop" src="assets/img/fleet-innova.webp" alt="Toyota Innova — tour vehicle option, full photo" loading="lazy"></div><div class="card-body"><h3>Toyota Innova</h3><p>Large-group option for Yatra and outstation tours.</p><a class="btn btn-outline btn-sm" href="{WA_LINK}%0AInterest%3A%20Innova%20for%20tour" target="_blank" rel="noopener">Request on WhatsApp</a></div></div>
+</div></div></section>
+
+<section class="section-tight"><div class="container">
 <div class="center reveal"><span class="kicker">Destinations</span><h2>Popular Destinations Around Haridwar</h2></div>
 <div class="dest-grid" style="margin-top:24px">
 <div class="dest reveal"><img class="nocrop" src="assets/img/dest-harkipauri.jpg" alt="Har Ki Pauri ghat and clock tower, Haridwar — real photo" loading="lazy"><div><h3>Har Ki Pauri</h3><p>Ganga aarti &amp; ghats</p></div></div>
@@ -213,7 +223,7 @@ home = f"""
 <div class="cta-btns"><a class="btn btn-wa" href="{WA_LINK}" target="_blank" rel="noopener">💬 Book Your Cab on WhatsApp</a><a class="btn btn-light" href="{TEL}">📞 Call {PHONE}</a></div>
 </div></div></section>
 """
-page("index.html","Shree Ji Travels Haridwar | One Way, Round Trip, Local, Outstation & Char Dham Cabs","Shree Ji Travels, SIDCUL Haridwar — cab service in Haridwar for one way taxi, round trip cab, local Haridwar taxi, outstation cabs & Char Dham Yatra. Book on WhatsApp +91 8077274970.","index.html",home)
+page("index.html","Shree Ji Travels Haridwar | One Way, Round Trip, Local, Outstation & Char Dham Cabs","Shree Ji Travels, SIDCUL Haridwar — cab service in Haridwar for one way taxi, round trip cab, local Haridwar taxi, outstation cabs & Char Dham Yatra. Book on WhatsApp +91 8865907497.","index.html",home)
 
 # ---------------- ONE WAY ----------------
 oneway = f"""
@@ -242,7 +252,7 @@ oneway = f"""
 </div>
 <div class="center" style="margin-top:26px"><a class="btn btn-wa" href="{WA_LINK}%0AJourney%20Type%3A%20One%20Way" target="_blank" rel="noopener">💬 Book One-Way Cab on WhatsApp</a></div>
 </div></section>"""
-page("one-way-cab.html","One Way Cab Service from Haridwar | Shree Ji Travels","One way taxi from Haridwar to Dehradun, Rishikesh, Delhi & Chandigarh. Request one-way fare on WhatsApp +91 8077274970. Fares confirmed before the trip.","one-way-cab.html",oneway)
+page("one-way-cab.html","One Way Cab Service from Haridwar | Shree Ji Travels","One way taxi from Haridwar to Dehradun, Rishikesh, Delhi & Chandigarh. Request one-way fare on WhatsApp +91 8865907497. Fares confirmed before the trip.","one-way-cab.html",oneway)
 
 # ---------------- ROUND TRIP ----------------
 roundtrip = f"""
@@ -259,7 +269,7 @@ roundtrip = f"""
 <li><span class="tick">✓</span><span><strong>Better for families &amp; pilgrims</strong> — same vehicle understanding for both legs.</span></li>
 <li><span class="tick">✓</span><span><strong>Clear communication</strong> — dates, passengers and luggage confirmed before travel.</span></li>
 <li><span class="tick">✓</span><span><strong>Fare shared upfront</strong> — request a quote; confirmed directly by the business.</span></li></ul>
-<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px"><img class="nocrop" src="assets/img/cab-side-1.jpg" alt="Shree Ji Travels sedan cab side, full photo" loading="lazy" style="border-radius:14px;width:48%;aspect-ratio:4/3;object-fit:contain"><img class="nocrop" src="assets/img/cab-rear.jpg" alt="Shree Ji Travels sedan cab rear, full photo" loading="lazy" style="border-radius:14px;width:48%;aspect-ratio:4/3;object-fit:contain"></div></div>
+<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px"><img class="nocrop" src="assets/img/cab-side-1.jpg" alt="Shree Ji Travels sedan cab side, full photo" loading="lazy" style="border-radius:14px;width:48%;aspect-ratio:4/3;object-fit:contain"><img class="nocrop" src="assets/img/cab-rear-angle.jpg" alt="Shree Ji Travels sedan cab rear, full photo" loading="lazy" style="border-radius:14px;width:48%;aspect-ratio:4/3;object-fit:contain"></div></div>
 <div class="reveal"><div class="booking-card"><h2>Round-Trip Enquiry</h2><p class="sub">Include return date &amp; vehicle preference.</p>
 <form data-whatsapp-form data-form="roundtrip" novalidate><div class="error-msg" role="alert"></div><div class="form-grid">
 <div class="field"><label>Pickup *</label><input name="pickup" placeholder="e.g. Haridwar" required></div>
@@ -267,13 +277,13 @@ roundtrip = f"""
 <div class="field"><label>Departure Date *</label><input name="travelDate" type="date" required></div>
 <div class="field"><label>Return Date *</label><input name="returnDate" type="date" required></div>
 <div class="field"><label>Passengers *</label><input name="passengers" type="number" min="1" max="50" required></div>
-<div class="field"><label>Vehicle Preference</label><select name="vehicle"><option value="">No preference</option><option>Sedan Cab</option><option>Passenger Van</option></select></div>
+<div class="field"><label>Vehicle Preference</label><select name="vehicle"><option value="">No preference</option><option>Sedan Cab</option><option>Passenger Van</option><option>Hyundai Aura</option><option>Maruti Ertiga</option><option>Kia Carens</option><option>Toyota Innova</option></select></div>
 <div class="field"><label>Customer Name *</label><input name="customerName" required></div>
 <div class="field"><label>Mobile *</label><input name="mobile" type="tel" required></div>
 <div class="field" style="display:none"><input name="journeyType" value="Round Trip"></div>
 </div><div class="form-foot"><button class="btn btn-wa btn-block" type="submit">💬 Request Round Trip Fare</button><span class="hint">Booking confirmed only after we reply on WhatsApp.</span></div></form></div></div>
 </div></div></section>"""
-page("round-trip-cab.html","Round Trip Cab Haridwar | Comfortable Return Journeys","Round trip cab Haridwar for family & return journeys. Share dates & passengers, request round trip fare on WhatsApp +91 8077274970.","round-trip-cab.html",roundtrip)
+page("round-trip-cab.html","Round Trip Cab Haridwar | Comfortable Return Journeys","Round trip cab Haridwar for family & return journeys. Share dates & passengers, request round trip fare on WhatsApp +91 8865907497.","round-trip-cab.html",roundtrip)
 
 # ---------------- LOCAL ----------------
 local = f"""
@@ -293,7 +303,7 @@ local = f"""
 <p style="color:var(--muted)">Sightseeing routes, waiting time and availability must be confirmed. Tell us your must-visit spots and start time — we plan the route.</p></div>
 <div class="reveal"><div class="booking-card"><h2>Local Cab Enquiry</h2><p class="sub">City transfer or sightseeing — opens on WhatsApp.</p>{booking_form("local","Local")}</div></div>
 </div></div></section>"""
-page("local-cab.html","Local Taxi in Haridwar | Har Ki Pauri, Temples & Rishikesh","Local taxi in Haridwar for Har Ki Pauri, Mansa Devi, Chandi Devi & Rishikesh. Confirm sightseeing route & fare on WhatsApp +91 8077274970.","local-cab.html",local)
+page("local-cab.html","Local Taxi in Haridwar | Har Ki Pauri, Temples & Rishikesh","Local taxi in Haridwar for Har Ki Pauri, Mansa Devi, Chandi Devi & Rishikesh. Confirm sightseeing route & fare on WhatsApp +91 8865907497.","local-cab.html",local)
 
 # ---------------- OUTSTATION ----------------
 outstation = f"""
@@ -303,7 +313,7 @@ outstation = f"""
 <h1>Outstation Cabs from Haridwar</h1>
 <p>For holidays, family visits, business journeys and personal trips across North India. Choose one-way or return — share dates, passengers and vehicle preference for a quote.</p>
 <div class="hero-ctas"><a class="btn btn-wa" href="{WA_LINK}%0AJourney%20Type%3A%20Outstation" target="_blank" rel="noopener">💬 Request Outstation Quote</a><a class="btn btn-light" href="{TEL}">📞 Call {PHONE}</a></div>
-</div><div class="page-hero-card"><img data-fallback src="{I['himalaya']}" alt="Scenic Himalayan destination for outstation travel"></div></div></section>
+</div><div class="page-hero-card"><img class="nocrop" src="assets/img/cab-hills.jpg" alt="Shree Ji Travels sedan cab on a mountain road, full photo"></div></div></section>
 <section class="section"><div class="container"><div class="split">
 <div class="reveal"><span class="kicker">Long Distance</span><h2>Travel Your Way</h2>
 <ul class="check-list"><li><span class="tick">✓</span><span><strong>Holidays</strong> — hill stations and sightseeing circuits with halts planned.</span></li>
@@ -321,13 +331,13 @@ outstation = f"""
 <div class="field"><label>Travel Date *</label><input name="travelDate" type="date" required></div>
 <div class="field"><label>Return Date (if applicable)</label><input name="returnDate" type="date"></div>
 <div class="field"><label>Passengers *</label><input name="passengers" type="number" min="1" max="50" required></div>
-<div class="field"><label>Vehicle Preference</label><select name="vehicle"><option value="">No preference</option><option>Sedan Cab</option><option>Passenger Van</option></select></div>
+<div class="field"><label>Vehicle Preference</label><select name="vehicle"><option value="">No preference</option><option>Sedan Cab</option><option>Passenger Van</option><option>Hyundai Aura</option><option>Maruti Ertiga</option><option>Kia Carens</option><option>Toyota Innova</option></select></div>
 <div class="field"><label>Mobile *</label><input name="mobile" type="tel" required></div>
 <div class="field"><label>Customer Name *</label><input name="customerName" required></div>
 <div class="field full"><label>Notes</label><textarea name="notes" placeholder="Halts, luggage, timing..."></textarea></div>
 </div><div class="form-foot"><button class="btn btn-wa btn-block" type="submit">💬 Request Quote on WhatsApp</button></div></form></div></div>
 </div></div></section>"""
-page("outstation-cab.html","Outstation Cab from Haridwar | Holidays, Family & Business Trips","Outstation cab from Haridwar for holidays, family visits & business journeys. Request quote on WhatsApp +91 8077274970.","outstation-cab.html",outstation)
+page("outstation-cab.html","Outstation Cab from Haridwar | Holidays, Family & Business Trips","Outstation cab from Haridwar for holidays, family visits & business journeys. Request quote on WhatsApp +91 8865907497.","outstation-cab.html",outstation)
 
 # ---------------- CHARDHAM ----------------
 chardham = f"""
@@ -361,7 +371,7 @@ chardham = f"""
 <div><h2>Planning Your Yatra</h2><p>Carry warm layers, comfortable walking shoes, medicines, ID proofs and extra buffer days. Elderly pilgrims should discuss trek stages and halts with family and us before finalising. Tap below to request a detailed quote.</p>
 <div class="cta-btns" style="justify-content:flex-start;margin-top:16px"><a class="btn btn-saffron" href="{WA_LINK}%0AJourney%20Type%3A%20Char%20Dham%20Yatra%0ARequest%3A%20detailed%20quote" target="_blank" rel="noopener">💬 Request a Quote</a></div></div>
 <div><img data-fallback src="{I['river']}" alt="Pilgrimage road along Himalayan river" loading="lazy"></div></div></div></section>"""
-page("char-dham-yatra.html","Char Dham Yatra Cab from Haridwar | Yamunotri Gangotri Kedarnath Badrinath","Char Dham Yatra cab from Haridwar — Yamunotri, Gangotri, Kedarnath, Badrinath. Request Yatra quote on WhatsApp +91 8077274970. Details confirmed before booking.","char-dham-yatra.html",chardham)
+page("char-dham-yatra.html","Char Dham Yatra Cab from Haridwar | Yamunotri Gangotri Kedarnath Badrinath","Char Dham Yatra cab from Haridwar — Yamunotri, Gangotri, Kedarnath, Badrinath. Request Yatra quote on WhatsApp +91 8865907497. Details confirmed before booking.","char-dham-yatra.html",chardham)
 
 # ---------------- ABOUT ----------------
 about = f"""
@@ -375,7 +385,7 @@ about = f"""
 <section class="section"><div class="container"><div class="split">
 <div class="reveal"><span class="kicker">Our Approach</span><h2>Comfortable Journeys, Clearly Coordinated</h2>
 <p>Families, tourists and pilgrims travel with different needs. We keep the process simple: you share pickup, destination, dates and passengers — we confirm the vehicle option, fare and pickup arrangement directly before the trip.</p>
-<ul class="check-list"><li><span class="tick">✓</span><span>One enquiry point on call &amp; WhatsApp: <strong>{PHONE}</strong></span></li>
+<ul class="check-list"><li><span class="tick">✓</span><span>One enquiry point — Call <strong>{PHONE}</strong> or WhatsApp <strong>{WA_DISPLAY}</strong></span></li>
 <li><span class="tick">✓</span><span>Sedan cabs for small groups; passenger vans for larger parties</span></li>
 <li><span class="tick">✓</span><span>Local Haridwar knowledge for temples, ghats and Rishikesh plans</span></li>
 <li><span class="tick">✓</span><span>Pilgrimage coordination for the Char Dham circuit, confirmed step by step</span></li></ul></div>
@@ -392,7 +402,7 @@ gal = f"""
 <p>Real cab photos from Shree Ji Travels plus illustrative travel photography of Haridwar, Uttarakhand and the Char Dham region. Tap any photo to view.</p>
 </div><div class="page-hero-card"><img class="nocrop" src="assets/img/cab-side-1.jpg" alt="White sedan cab, full photo"></div></div></section>
 <section class="section"><div class="container">
-<div class="filter-bar reveal"><button class="active" data-filter="all">All</button><button data-filter="sedan">Sedan Cabs</button><button data-filter="van">Passenger Vans</button><button data-filter="haridwar">Haridwar</button><button data-filter="mountains">Uttarakhand Mountains</button><button data-filter="chardham">Char Dham Yatra</button></div>
+<div class="filter-bar reveal"><button class="active" data-filter="all">All</button><button data-filter="sedan">Sedan Cabs</button><button data-filter="van">Passenger Vans</button><button data-filter="tour">Tour Vehicles</button><button data-filter="haridwar">Haridwar</button><button data-filter="mountains">Uttarakhand Mountains</button><button data-filter="chardham">Char Dham Yatra</button></div>
 <div class="g-grid">
 <button class="g-item" data-cat="sedan"><img class="nocrop" src="assets/img/cab-front-1.jpg" alt="Shree Ji Travels sedan — front view, full photo" loading="lazy"><figcaption>Sedan Cab • Real Photo</figcaption></button>
 <button class="g-item" data-cat="sedan"><img class="nocrop" src="assets/img/cab-rear.jpg" alt="Shree Ji Travels sedan — rear view, full photo" loading="lazy"><figcaption>Sedan Cab • Real Photo</figcaption></button>
@@ -400,8 +410,14 @@ gal = f"""
 <button class="g-item" data-cat="sedan"><img class="nocrop" src="assets/img/cab-side-1.jpg" alt="Sedan cab side profile, full photo" loading="lazy"><figcaption>Sedan Cab • Real Photo</figcaption></button>
 <button class="g-item" data-cat="sedan"><img class="nocrop" src="assets/img/cab-side-2.jpg" alt="Sedan cab side view on road, full photo" loading="lazy"><figcaption>Sedan Cab • Real Photo</figcaption></button>
 <button class="g-item" data-cat="sedan"><img class="nocrop" src="assets/img/cab-hotel.jpg" alt="Sedan cab parked at hotel, full photo" loading="lazy"><figcaption>Sedan Cab • On Duty</figcaption></button>
+<button class="g-item" data-cat="sedan"><img class="nocrop" src="assets/img/cab-rear-angle.jpg" alt="Sedan cab rear three-quarter view, full photo" loading="lazy"><figcaption>Sedan Cab • Real Photo</figcaption></button>
+<button class="g-item" data-cat="sedan"><img class="nocrop" src="assets/img/cab-hills.jpg" alt="Sedan cab on mountain road, full photo" loading="lazy"><figcaption>Sedan Cab • On Trip</figcaption></button>
 <button class="g-item" data-cat="van"><img class="nocrop poster-full" src="assets/img/poster.jpg" alt="Business poster showing sedan and passenger van, full poster" loading="lazy"><figcaption>Sedan + Van • Poster</figcaption></button>
 <button class="g-item" data-cat="van"><img class="nocrop" src="assets/img/cab-hotel.jpg" alt="Shree Ji Travels cab on duty, full photo" loading="lazy"><figcaption>Our Cab • On Duty</figcaption></button>
+<button class="g-item" data-cat="tour"><img class="nocrop" src="assets/img/fleet-aura.webp" alt="Hyundai Aura — tour vehicle, full photo" loading="lazy"><figcaption>Hyundai Aura • Tour Vehicle</figcaption></button>
+<button class="g-item" data-cat="tour"><img class="nocrop" src="assets/img/fleet-ertiga.jpg" alt="Maruti Suzuki Ertiga — tour vehicle, full photo" loading="lazy"><figcaption>Ertiga • Tour Vehicle</figcaption></button>
+<button class="g-item" data-cat="tour"><img class="nocrop" src="assets/img/fleet-carens.jpg" alt="Kia Carens — tour vehicle, full photo" loading="lazy"><figcaption>Kia Carens • Tour Vehicle</figcaption></button>
+<button class="g-item" data-cat="tour"><img class="nocrop" src="assets/img/fleet-innova.webp" alt="Toyota Innova — tour vehicle, full photo" loading="lazy"><figcaption>Innova • Tour Vehicle</figcaption></button>
 <button class="g-item" data-cat="haridwar"><img data-fallback src="{I['ghat']}" alt="Haridwar Ganga ghat" loading="lazy"><figcaption>Haridwar • Ghats</figcaption></button>
 <button class="g-item" data-cat="haridwar"><img data-fallback src="{I['ganga_aarti']}" alt="Ganga river at Haridwar Rishikesh" loading="lazy"><figcaption>Haridwar • Ganga</figcaption></button>
 <button class="g-item" data-cat="mountains"><img data-fallback src="{I['hero_home']}" alt="Uttarakhand highway and mountains" loading="lazy"><figcaption>Uttarakhand • Highway</figcaption></button>
@@ -412,7 +428,7 @@ gal = f"""
 <button class="g-item" data-cat="chardham"><img class="nocrop" src="assets/img/temple-kedarnath.jpg" alt="Kedarnath Temple — real photo" loading="lazy"><figcaption>Kedarnath • Real Photo</figcaption></button>
 <button class="g-item" data-cat="chardham"><img class="nocrop" src="assets/img/temple-badrinath.jpg" alt="Badrinath Temple — real photo" loading="lazy"><figcaption>Badrinath • Real Photo</figcaption></button>
 </div>
-<p class="hint center" style="margin-top:18px">Cab photos are real Shree Ji Travels vehicles; temple photos are real photographs (via Wikimedia Commons contributors). Vehicle for your trip is confirmed at booking.</p>
+<p class="hint center" style="margin-top:18px">Cab photos are real Shree Ji Travels vehicles; temple &amp; destination photos are real photographs (via Wikimedia Commons contributors); tour-vehicle pictures are representative model photos. Actual vehicle for your trip is confirmed at booking.</p>
 </div></section>"""
 page("gallery.html","Gallery | Shree Ji Travels — Sedan Cabs, Haridwar & Char Dham Photos","Gallery of Shree Ji Travels: real sedan cab photos, Haridwar, Uttarakhand mountains & Char Dham Yatra region. SIDCUL Haridwar taxi service.","gallery.html",gal)
 
@@ -422,20 +438,20 @@ contact = f"""
 <div class="container page-hero-inner"><div>
 <div class="breadcrumb"><a href="index.html">Home</a> › <span>Contact</span></div>
 <h1>Contact &amp; Booking — Shree Ji Travels</h1>
-<p>📍 SIDCUL, Haridwar, Uttarakhand, India &nbsp;•&nbsp; 📞 {PHONE} &nbsp;•&nbsp; Tap below to call or WhatsApp. Every form opens WhatsApp with your message ready.</p>
+<p>📍 SIDCUL, Haridwar, Uttarakhand, India &nbsp;•&nbsp; 📞 Call: {PHONE} &nbsp;•&nbsp; 💬 WhatsApp: {WA_DISPLAY} &nbsp;•&nbsp; Tap below to call or WhatsApp. Every form opens WhatsApp with your message ready.</p>
 <div class="hero-ctas"><a class="btn btn-wa" href="{WA_LINK}" target="_blank" rel="noopener">💬 WhatsApp Booking</a><a class="btn btn-light" href="{TEL}">📞 Tap to Call</a></div>
 </div><div class="page-hero-card"><img class="nocrop poster-full" src="assets/img/poster.jpg" alt="Shree Ji Travels contact poster with phone number, full poster"></div></div></section>
 <section class="section"><div class="container contact-grid">
 <div class="info-card reveal"><h2>Reach Us Directly</h2>
 <div class="info-row"><span class="ic">📞</span><span><strong>Phone</strong><br><a href="{TEL}">{PHONE}</a></span></div>
-<div class="info-row"><span class="ic">💬</span><span><strong>WhatsApp</strong><br><a href="https://wa.me/{WA}" target="_blank" rel="noopener">{PHONE} — chat now</a></span></div>
+<div class="info-row"><span class="ic">💬</span><span><strong>WhatsApp</strong><br><a href="https://wa.me/{WA}" target="_blank" rel="noopener">{WA_DISPLAY} — chat now</a></span></div>
 <div class="info-row"><span class="ic">📍</span><span><strong>Location</strong><br>SIDCUL, Haridwar, Uttarakhand, India</span></div>
 <div style="display:flex;gap:10px;flex-wrap:wrap"><a class="btn btn-wa btn-sm" href="{TEL}">📞 Tap to Call</a><a class="btn btn-saffron btn-sm" href="https://wa.me/{WA}?text=Namaste%20Shree%20Ji%20Travels!%20I%20would%20like%20to%20enquire%20about%20a%20cab%20booking." target="_blank" rel="noopener">💬 WhatsApp Booking</a></div>
 <div class="map-wrap"><iframe title="Map — SIDCUL, Haridwar" src="https://www.google.com/maps?q=SIDCUL,+Haridwar,+Uttarakhand&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 </div>
 <div class="reveal"><div class="booking-card"><h2>Booking Enquiry Form</h2><p class="sub">Validated — sends via prefilled WhatsApp message.</p>{booking_form("contact")}</div></div>
 </div></div></section>"""
-page("contact.html","Contact & Booking | Shree Ji Travels SIDCUL Haridwar","Contact Shree Ji Travels, SIDCUL Haridwar. Call or WhatsApp +91 8077274970 for cab booking. Booking enquiry form with tap-to-call & map.","contact.html",contact)
+page("contact.html","Contact & Booking | Shree Ji Travels SIDCUL Haridwar","Contact Shree Ji Travels, SIDCUL Haridwar. Call +91 8077274970 or WhatsApp +91 8865907497 for cab booking. Booking enquiry form with tap-to-call & map.","contact.html",contact)
 
 # ---------------- FAQ ----------------
 faqs = [("How can I book a cab?","Fill any enquiry form on this site or tap a WhatsApp button. Your trip details open pre-filled in WhatsApp — press send and we reply with fare and availability. A booking is confirmed only after we confirm it."),
@@ -450,13 +466,13 @@ faq_body = '<section class="section"><div class="container"><div class="center r
 for q,a in faqs:
     faq_body += f'<div class="faq-item reveal"><button class="faq-q" aria-expanded="false">{q}<span class="plus">+</span></button><div class="faq-a"><p>{a}</p></div></div>'
 faq_body += f'</div><div class="center" style="margin-top:26px"><a class="btn btn-wa" href="{WA_LINK}" target="_blank" rel="noopener">💬 Ask on WhatsApp</a> <a class="btn btn-outline" href="contact.html">Contact Page →</a></div></div></section>'
-page("faq.html","FAQ | Shree Ji Travels Haridwar — Booking, Fares & Yatra","FAQs: how to book a cab, one-way & round-trip taxi, local Haridwar travel, outstation cabs, Char Dham Yatra enquiries, fare & availability. +91 8077274970.","faq.html",faq_body)
+page("faq.html","FAQ | Shree Ji Travels Haridwar — Booking, Fares & Yatra","FAQs: how to book a cab, one-way & round-trip taxi, local Haridwar travel, outstation cabs, Char Dham Yatra enquiries, fare & availability. Call +91 8077274970 • WhatsApp +91 8865907497.","faq.html",faq_body)
 
 # ---------------- PRIVACY / TERMS / 404 ----------------
 page("privacy-policy.html","Privacy Policy | Shree Ji Travels","Privacy policy of Shree Ji Travels website: enquiry data shared via WhatsApp only; no online payments or accounts.","privacy-policy.html",
-'<section class="section"><div class="container" style="max-width:820px"><span class="kicker">Legal</span><h1>Privacy Policy</h1><p>Shree Ji Travels, SIDCUL Haridwar, operates this website to receive cab enquiries over phone and WhatsApp.</p><h3>What we collect</h3><p>Only what you type into an enquiry form (name, pickup, destination, dates, passengers, mobile) — which <strong>you choose to send via WhatsApp</strong> to +91 8077274970. We do not operate accounts, online payments or a database on this site.</p><h3>How it is used</h3><p>Your message is used solely to respond with fare and availability and to coordinate your trip.</p><h3>Cookies &amp; analytics</h3><p>This static site sets no tracking cookies of its own. Embedded content (maps, fonts, images) may be subject to those providers\u2019 policies.</p><h3>Contact</h3><p>For privacy questions, call or WhatsApp us at +91 8077274970.</p></div></section>')
+'<section class="section"><div class="container" style="max-width:820px"><span class="kicker">Legal</span><h1>Privacy Policy</h1><p>Shree Ji Travels, SIDCUL Haridwar, operates this website to receive cab enquiries over phone and WhatsApp.</p><h3>What we collect</h3><p>Only what you type into an enquiry form (name, pickup, destination, dates, passengers, mobile) — which <strong>you choose to send via WhatsApp</strong> to +91 8865907497. We do not operate accounts, online payments or a database on this site.</p><h3>How it is used</h3><p>Your message is used solely to respond with fare and availability and to coordinate your trip.</p><h3>Cookies &amp; analytics</h3><p>This static site sets no tracking cookies of its own. Embedded content (maps, fonts, images) may be subject to those providers\u2019 policies.</p><h3>Contact</h3><p>For privacy questions, call us at +91 8077274970 or WhatsApp us at +91 8865907497.</p></div></section>')
 page("terms.html","Terms of Service | Shree Ji Travels","Terms of using Shree Ji Travels website and requesting cab enquiries: quotes, confirmation and conduct.","terms.html",
-'<section class="section"><div class="container" style="max-width:820px"><span class="kicker">Legal</span><h1>Terms of Service</h1><p>By using this website or sending an enquiry, you agree to the following.</p><h3>Enquiries, not automatic bookings</h3><p>Forms open WhatsApp with a pre-filled message. A trip is booked only after Shree Ji Travels confirms fare, vehicle and pickup directly.</p><h3>Fares &amp; availability</h3><p>All fares, routes, waiting time, vehicle allocation and Yatra details are quoted and confirmed by the business per trip. Example routes and illustrative itineraries are not guarantees.</p><h3>Conduct</h3><p>Please share accurate pickup details, passenger counts and contact numbers so we can coordinate smoothly.</p><h3>Contact</h3><p>SIDCUL, Haridwar, Uttarakhand • +91 8077274970.</p></div></section>')
+'<section class="section"><div class="container" style="max-width:820px"><span class="kicker">Legal</span><h1>Terms of Service</h1><p>By using this website or sending an enquiry, you agree to the following.</p><h3>Enquiries, not automatic bookings</h3><p>Forms open WhatsApp with a pre-filled message. A trip is booked only after Shree Ji Travels confirms fare, vehicle and pickup directly.</p><h3>Fares &amp; availability</h3><p>All fares, routes, waiting time, vehicle allocation and Yatra details are quoted and confirmed by the business per trip. Example routes and illustrative itineraries are not guarantees.</p><h3>Conduct</h3><p>Please share accurate pickup details, passenger counts and contact numbers so we can coordinate smoothly.</p><h3>Contact</h3><p>SIDCUL, Haridwar, Uttarakhand • Call: +91 8077274970 • WhatsApp: +91 8865907497.</p></div></section>')
 page("404.html","Page Not Found | Shree Ji Travels","The page you requested could not be found. Return to Shree Ji Travels home or book on WhatsApp.","index.html",
 f'<section class="nf"><div class="container"><span class="kicker">404</span><h1>Destination not found</h1><p class="lead" style="margin:0 auto 22px">The road you took doesn\u2019t exist — but Haridwar\u2019s finest journeys do. Let\u2019s get you back on route.</p><div class="cta-btns"><a class="btn btn-primary" href="index.html">← Back to Home</a><a class="btn btn-wa" href="{WA_LINK}" target="_blank" rel="noopener">💬 WhatsApp Us</a></div></div></section>')
 

@@ -1,5 +1,5 @@
 /* Shree Ji Travels — shared interactions v1.0 */
-const WA_NUMBER = '918077274970';
+const WA_NUMBER = '918865907497';
 const $ = (s, c = document) => c.querySelector(s);
 const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
 
